@@ -1,11 +1,11 @@
 package com.example.datastorage
 
-import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import java.io.File
-import java.io.FileInputStream
 
 class MainActivity : AppCompatActivity() {
     val file_name = "aristide_zié.txt"
@@ -24,5 +24,17 @@ class MainActivity : AppCompatActivity() {
 
         val fileContentsTextView: TextView = findViewById<TextView>(R.id.file_contents_textView)
         fileContentsTextView.text = file_contents
+
+        val edite_file_contents_button: Button = findViewById<Button>(R.id.edite_file_contents_button)
+        edite_file_contents_button.setOnClickListener {
+            val intent = Intent(this, EditableTextActivity::class.java)
+            startActivity(intent)
+        }
+
+        val create_file_button: Button = findViewById<Button>(R.id.create_file_button)
+        create_file_button.setOnClickListener {
+            val intent = Intent(this, CreateFileActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
