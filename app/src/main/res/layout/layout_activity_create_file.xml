@@ -6,22 +6,25 @@
     <EditText
         android:id="@+id/editable_editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter the file name..." />
 
     <Button
         android:id="@+id/ok_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="91dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/editable_editText"
         android:text="OK" />
 
-    <Button
-        android:id="@+id/cancel_button"
+    <ListView
+        android:id="@+id/files_listView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/editable_editText"
-        android:layout_alignRight="@+id/ok_button"
-        android:text="Cancel"/>
+        android:layout_below="@+id/ok_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp" />
+
 
 </RelativeLayout>

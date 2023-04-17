@@ -22,4 +22,21 @@
         android:textColor="#000"
         android:textSize="17dp"/>
 
+    <Button
+        android:id="@+id/edite_file_contents_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/file_contents_textView"
+        android:layout_alignParentEnd="true"
+        android:text="Edite file\ncontent"/>
+
+    <Button
+        android:id="@+id/create_file_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/file_contents_textView"
+        android:text="Create new\nFile"/>
+
 </RelativeLayout>
